@@ -1,0 +1,64 @@
+#PS_Container-root {
+  padding: 0;
+  margin: 0;
+}
+
+#Sidebar-container {
+  display: inline-block;
+  position: fixed;
+
+  padding: 0;
+  margin: 0;
+
+  height: 100vh;
+  width: 10vw;
+
+  left: 0;
+
+  overflow: auto;
+
+  background-color: #cccccc;
+}
+
+/* -----------------------TODO------------------------------- */
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+/* @media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+  }
+  div.content {
+    margin-left: 0;
+  }
+} */
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+/* @media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+} */
+/* ------------------------------------------------------ */
+
+#Page-container {
+  display: inline-block;
+  position: fixed;
+
+  padding: 0;
+  margin: 0;
+
+  height: 100vh;
+  width: 90vw;
+
+  right: 0;
+
+  overflow-y: scroll;
+  overflow-x: none;
+
+  background-color: #efefef;
+}

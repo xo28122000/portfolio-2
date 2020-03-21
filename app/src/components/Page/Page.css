@@ -1,0 +1,18 @@
+#Page-root {
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  margin-right: 5%;
+  margin-left: 5%;
+  padding: 5%;
+
+  height: 65%;
+  width: 80%;
+
+  background-color: #c0c0c0;
+  transition: background-color 1s;
+}
+
+#Page-root:hover {
+  cursor: cell;
+  background-color: #868686;
+}
