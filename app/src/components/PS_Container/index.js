@@ -6,8 +6,8 @@ import Page from "../Page";
 const PS_Container = () => {
   return (
     <div id="PS_Container-root">
-      <div id="Sidebar-container">sidebar</div>
-      <div id="Page-container">
+      <div id="Sidebar-container-root">sidebar</div>
+      <div id="Page-container-root">
         <Page />
         <Page />
         <Page />
