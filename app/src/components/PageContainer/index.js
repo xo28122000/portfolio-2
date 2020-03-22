@@ -1,23 +1,38 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import "./PageContainer.css";
 
 const PageContainer = props => {
+  const makeCenter = element => {
+    element.style.visibility = "visible";
+    setLeft("20%");
+  };
+  const makeLeft = element => {
+    element.style.visibility = "visible";
+    setLeft("-40%");
+  };
+  const makeRight = element => {
+    element.style.visibility = "visible";
+    setLeft("85%");
+  };
+
   useEffect(() => {
-    console.log("pageContainerLoaded");
+    if (props.isVisible) {
+      const pg_ele = document.getElementById("PageContainer-root");
+      if (props.pos == -1) {
+        makeLeft(pg_ele);
+      } else if (props.pos == 0) {
+        makeCenter(pg_ele);
+      } else if (props.pos == 1) {
+        makeRight(pg_ele);
+      } else {
+        console.log("error");
+      }
+    }
   });
+
+  const [posLeft, setLeft] = useState("20%");
   return (
-    <div
-      style={{
-        position: "fixed",
-        top: "10vh",
-        bottom: "10vh",
-        left: "20%",
-        backgroundColor: "#d4e4f5",
-        height: "auto",
-        width: "60%",
-        overflowY: "scroll",
-        fontSize: "40px"
-      }}
-    >
+    <div id="PageContainer-root" style={{ left: posLeft }}>
       {/* blah
       <br />
       <br /> blah

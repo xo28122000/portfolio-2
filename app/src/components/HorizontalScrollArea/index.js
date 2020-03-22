@@ -14,7 +14,8 @@ const HorizontalScrollAres = () => {
         justifyContent: "center"
       }}
     >
-      <PageContainer />
+      <PageContainer pos={-1} isVisible={true} />
+      <PageContainer pos={0} isVisible={true} />
     </div>
   );
 };

@@ -1,0 +1,16 @@
+#PageContainer-root {
+  position: fixed;
+  top: 10vh;
+  bottom: 10vh;
+  left: 20%;
+
+  visibility: hidden;
+
+  height: auto;
+  width: 60%;
+
+  overflow-y: scroll;
+
+  font-size: 40px;
+  background-color: #d4e4f5;
+}
