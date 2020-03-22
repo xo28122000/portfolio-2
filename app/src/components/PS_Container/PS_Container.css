@@ -4,7 +4,7 @@
 }
 
 #Sidebar-container-root {
-  display: inline-block;
+  display: block;
   position: fixed;
 
   padding: 0;
@@ -14,8 +14,6 @@
   width: 10%;
 
   left: 0;
-
-  z-index: 110;
 
   overflow: auto;
 
@@ -48,8 +46,10 @@
 /* ------------------------------------------------------ */
 
 #Page-container-root {
-  display: inline-block;
+  display: block;
   position: fixed;
+
+  align-items: stretch;
 
   padding: 0;
   margin: 0;
