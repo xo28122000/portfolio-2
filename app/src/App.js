@@ -1,14 +1,16 @@
 import React from "react";
 import "./App.css";
-import PS_Container from "./components/PS_Container";
-import Dispnum from "./components/testcomponent";
-import AddButton from "./components/testcomponent2";
+
+import Header from "./components/Header";
+import HorizontalScrollArea from "./components/HorizontalScrollArea";
+import Footer from "./components/Footer";
+
 function App() {
   return (
     <div className="App-Root">
-      {/* <PS_Container /> */}
-      <Dispnum />
-      <AddButton />
+      <Header />
+      <HorizontalScrollArea />
+      <Footer />
     </div>
   );
 }
