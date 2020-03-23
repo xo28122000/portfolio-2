@@ -1,15 +1,17 @@
 import React from "react";
 import "./Page.css";
 
-const Page_expand = () => {
-  console.log("click");
-  document.getElementById("Page-container");
-};
-
-const Page = () => {
+const Page = props => {
   return (
-    <div id="Page-root" onClick={Page_expand}>
+    <div id="Page-root" style={{ overflowY: props.scroll }}>
       A page
+      <br /> <br /> <br /> A page
+      <br /> <br /> <br /> A page
+      <br /> <br /> <br /> A page
+      <br /> <br /> <br /> A page
+      <br /> <br /> <br /> A page
+      <br /> <br /> <br /> A page
+      <br /> <br /> <br />
     </div>
   );
 };

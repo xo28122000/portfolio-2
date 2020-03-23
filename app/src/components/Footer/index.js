@@ -5,6 +5,8 @@ import { faForward, faBackward } from "@fortawesome/free-solid-svg-icons";
 import "./Footer.css";
 
 const Footer = () => {
+  const nextClick = () => {};
+  const prevClick = () => {};
   return (
     <div id="Footer-root">
       <div
@@ -25,11 +27,14 @@ const Footer = () => {
             paddingBottom: "1vh"
           }}
         >
-          <FontAwesomeIcon
-            icon={faBackward}
-            size="4x"
-            style={{ height: "8vh" }}
-          />
+          <div>
+            <FontAwesomeIcon
+              icon={faBackward}
+              size="4x"
+              onClick={prevClick}
+              style={{ height: "8vh" }}
+            />
+          </div>
         </div>
 
         <div
@@ -45,6 +50,7 @@ const Footer = () => {
           <FontAwesomeIcon
             icon={faForward}
             size="4x"
+            onClick={nextClick}
             style={{ height: "8vh" }}
           />
         </div>

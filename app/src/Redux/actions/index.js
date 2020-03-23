@@ -1,4 +1,4 @@
-import { ADD1 } from "../constants";
+import { ADD1, HORIZONTAL_NAVIGATE } from "../constants";
 
 // export function addArticle(payload) {
 //   return { type: ADD1, payload };
@@ -6,4 +6,8 @@ import { ADD1 } from "../constants";
 
 export function addOne() {
   return { type: ADD1 };
+}
+
+export function setHorzontalNavigate(payload = null) {
+  return { type: HORIZONTAL_NAVIGATE, payload };
 }

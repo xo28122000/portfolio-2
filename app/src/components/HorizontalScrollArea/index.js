@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import PageContainer from "../PageContainer";
 
 const HorizontalScrollAres = () => {
+  const pageList = [];
   return (
     <div
       style={{
@@ -14,8 +15,9 @@ const HorizontalScrollAres = () => {
         justifyContent: "center"
       }}
     >
-      <PageContainer pos={-1} isVisible={true} />
-      <PageContainer pos={0} isVisible={true} />
+      <PageContainer left={"20%"} />
+      <PageContainer left={"85%"} />
+      <PageContainer left={"150%"} />
     </div>
   );
 };
