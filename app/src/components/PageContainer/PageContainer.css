@@ -1,11 +1,10 @@
 #PageContainer-root {
   position: fixed;
-  top: 10vh;
+  top: 5vh;
   bottom: 10vh;
   left: 20%;
   transition: left ease 2s;
 
-  height: 80vh;
   width: 60%;
 
   overflow-x: none;

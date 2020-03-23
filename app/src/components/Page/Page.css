@@ -28,8 +28,11 @@
   background-color: #868686;
 }
 
-#movethis {
+#Page-title {
   position: fixed;
-  top: 60px;
+  top: 2vh;
+  font-size: 8vh;
+  /* left: 40vw;
+  right: 40vw; */
   transition: top ease 2s;
 }

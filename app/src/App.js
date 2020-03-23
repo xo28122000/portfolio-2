@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div className="App-Root">
-      <Header />
+      {/* <Header /> */}
       <HorizontalScrollArea />
       <Footer />
     </div>
