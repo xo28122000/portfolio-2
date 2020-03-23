@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PageContainer from "../PageContainer";
 
 const HorizontalScrollAres = props => {
   const pagePosition = [20, 95, 170];
+
   return (
     <div
       style={{

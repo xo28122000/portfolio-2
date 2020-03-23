@@ -8,3 +8,18 @@
 
   background-color: #ecaaaa;
 }
+
+#Footer-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.Footer-elements {
+  flex: 1;
+  flex-grow: 1;
+  text-align: center;
+  height: 10vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}

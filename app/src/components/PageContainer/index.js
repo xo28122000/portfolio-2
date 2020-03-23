@@ -9,9 +9,8 @@ import { setHorzontalNavigate, setPageNo } from "../../Redux/actions";
 const PageContainer = props => {
   const [left, setLeft] = useState(props.left);
   const [pageNo, setPageNo] = useState(0);
-  var tempPageNo = 0;
+  var tempPageNo;
   useEffect(() => {
-    console.log(props.pageNo);
     if (props.navigate === 1) {
       if (pageNo < 2) {
         tempPageNo = pageNo;

@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faForward, faBackward } from "@fortawesome/free-solid-svg-icons";
 import "./Footer.css";
 
+import { page_content } from "../../constants";
+
 import { connect } from "react-redux";
 import { setHorzontalNavigate } from "../../Redux/actions";
 
 const Footer = props => {
+  const [title, setTitle] = useState("About");
+  useEffect(() => {
+    setTitle(page_content[props.pageNo].title);
+  }, [props.pageNo]);
   const nextClick = () => {
     if (props.navigate === 0) {
       props.setHorzontalNavigate(1);
@@ -20,47 +26,25 @@ const Footer = props => {
   };
   return (
     <div id="Footer-root">
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          flexWrap: "nowrap"
-          //   justifyContent: "center"
-        }}
-      >
-        <div
-          style={{
-            flex: 1,
-            flexGrow: 1,
-            textAlign: "center",
-            height: "10vh",
-            paddingTop: "1vh",
-            paddingBottom: "1vh"
-          }}
-        >
-          <div>
-            <FontAwesomeIcon
-              icon={faBackward}
-              size="4x"
-              onClick={prevClick}
-              style={{ height: "8vh" }}
-            />
-          </div>
+      <div id="Footer-container">
+        <div className="Footer-elements">
+          <FontAwesomeIcon
+            icon={faBackward}
+            size="3x"
+            onClick={prevClick}
+            style={{ height: "8vh" }}
+          />
         </div>
-
         <div
-          style={{
-            flex: 1,
-            flexGrow: 1,
-            textAlign: "center",
-            height: "10vh",
-            paddingTop: "1vh",
-            paddingBottom: "1vh"
-          }}
+          className="Footer-elements"
+          style={{ flex: "3", backgroundColor: "#f5f5d4", fontSize: "7vh" }}
         >
+          {title}
+        </div>
+        <div className="Footer-elements">
           <FontAwesomeIcon
             icon={faForward}
-            size="4x"
+            size="3x"
             onClick={nextClick}
             style={{ height: "8vh" }}
           />
@@ -71,7 +55,7 @@ const Footer = props => {
 };
 
 const mapStateToProps = state => {
-  return { navigate: state.navigate };
+  return { navigate: state.navigate, pageNo: state.pageNo };
 };
 function mapDispatchToProps(dispatch) {
   return {
