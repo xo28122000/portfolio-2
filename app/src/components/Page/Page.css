@@ -5,10 +5,10 @@
   margin-right: 2vw;
   margin-left: 2vw;
 
-  padding-top: 2.5vh;
-  padding-bottom: 2.5vh;
-  padding-right: 2vw;
-  padding-left: 2vw;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+  padding-right: 4vw;
+  padding-left: 4vw;
 
   /* padding: 0px; */
 
@@ -24,7 +24,6 @@
 
 #Page-root:hover {
   cursor: cell;
-
   background-color: #868686;
 }
 

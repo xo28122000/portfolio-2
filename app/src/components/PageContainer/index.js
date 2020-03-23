@@ -32,7 +32,7 @@ const PageContainer = props => {
   }, [props.navigate, left]);
 
   return (
-    <div id="PageContainer-root" style={{ left: left.toString() + "%" }}>
+    <div className="PageContainer-root" style={{ left: left.toString() + "%" }}>
       <Page />
     </div>
   );

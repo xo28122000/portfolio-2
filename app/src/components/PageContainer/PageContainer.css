@@ -1,15 +1,15 @@
-#PageContainer-root {
+.PageContainer-root {
   position: fixed;
   top: 5vh;
   bottom: 10vh;
   left: 20%;
   transition: left ease 2s;
 
-  width: 60%;
+  width: 60vw;
 
   overflow-x: none;
   overflow-y: none;
 
   font-size: 40px;
-  background-color: #d4e4f5;
+  background-color: RGB(211, 245, 212);
 }
