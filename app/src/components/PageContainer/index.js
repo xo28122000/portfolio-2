@@ -4,7 +4,7 @@ import "./PageContainer.css";
 import Page from "../Page";
 const PageContainer = props => {
   useEffect(() => {
-    if (props.left == "20%") {
+    if (props.left === "20%") {
       setScroll("scroll");
     } else {
       setScroll("none");

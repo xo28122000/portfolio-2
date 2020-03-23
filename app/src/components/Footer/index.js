@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faForward, faBackward } from "@fortawesome/free-solid-svg-icons";
 import "./Footer.css";
 
-const Footer = () => {
-  const nextClick = () => {};
-  const prevClick = () => {};
+import { connect } from "react-redux";
+import { setHorzontalNavigate } from "../../Redux/actions";
+
+const Footer = props => {
+  useEffect(() => {
+    console.log(props.navigate);
+  });
+  const nextClick = () => {
+    if (props.navigate === 0) props.setHorzontalNavigate(1);
+  };
+  const prevClick = () => {
+    if (props.navigate === 0) props.setHorzontalNavigate(-1);
+  };
   return (
     <div id="Footer-root">
       <div
@@ -59,4 +69,16 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+const mapStateToProps = state => {
+  return { navigate: state.navigate };
+};
+function mapDispatchToProps(dispatch) {
+  return {
+    setHorzontalNavigate: payload => dispatch(setHorzontalNavigate(payload))
+  };
+}
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Footer);

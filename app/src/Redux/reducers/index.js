@@ -2,7 +2,7 @@ import { ADD1, HORIZONTAL_NAVIGATE } from "../constants";
 
 const initialState = {
   num: 0,
-  navigate: null
+  navigate: 0
 };
 
 function rootReducer(state = initialState, action) {
@@ -10,7 +10,7 @@ function rootReducer(state = initialState, action) {
     return Object.assign({}, state, {
       num: state.num + 1
     });
-  } else if (action.type == HORIZONTAL_NAVIGATE) {
+  } else if (action.type === HORIZONTAL_NAVIGATE) {
     return Object.assign({}, state, {
       navigate: action.payload
     });

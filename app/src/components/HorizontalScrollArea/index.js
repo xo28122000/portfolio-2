@@ -1,8 +1,31 @@
 import React, { useEffect, useState } from "react";
 import PageContainer from "../PageContainer";
 
-const HorizontalScrollAres = () => {
-  const pageList = [];
+import { connect } from "react-redux";
+import { setHorzontalNavigate } from "../../Redux/actions";
+
+const HorizontalScrollAres = props => {
+  const [pagePosition, setPagePosition] = useState([20, 85, 150]);
+  useEffect(() => {
+    if (props.navigate === 1) {
+      console.log("moved next");
+      for (var i = 0; i < pagePosition.length; i++) {
+        pagePosition[i] -= 65;
+      }
+      setPagePosition(pagePosition);
+      props.setHorzontalNavigate(0);
+    } else if (props.navigate === -1) {
+      console.log("moved back");
+      for (i = 0; i < pagePosition.length; i++) {
+        pagePosition[i] += 65;
+      }
+      setPagePosition(pagePosition);
+      props.setHorzontalNavigate(0);
+    }
+
+    console.log();
+  });
+
   return (
     <div
       style={{
@@ -15,11 +38,23 @@ const HorizontalScrollAres = () => {
         justifyContent: "center"
       }}
     >
-      <PageContainer left={"20%"} />
-      <PageContainer left={"85%"} />
-      <PageContainer left={"150%"} />
+      <PageContainer left={pagePosition[0].toString() + "%"} />
+      <PageContainer left={pagePosition[1].toString() + "%"} />
+      <PageContainer left={pagePosition[2].toString() + "%"} />
     </div>
   );
 };
 
-export default HorizontalScrollAres;
+const mapStateToProps = state => {
+  return { navigate: state.navigate };
+};
+function mapDispatchToProps(dispatch) {
+  return {
+    setHorzontalNavigate: payload => dispatch(setHorzontalNavigate(payload))
+  };
+}
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(HorizontalScrollAres);
