@@ -4,16 +4,29 @@ import "./PageContainer.css";
 import Page from "../Page";
 
 import { connect } from "react-redux";
-import { setHorzontalNavigate } from "../../Redux/actions";
+import { setHorzontalNavigate, setPageNo } from "../../Redux/actions";
 
 const PageContainer = props => {
   const [left, setLeft] = useState(props.left);
+  const [pageNo, setPageNo] = useState(0);
+  var tempPageNo = 0;
   useEffect(() => {
+    console.log(props.pageNo);
     if (props.navigate === 1) {
+      if (pageNo < 2) {
+        tempPageNo = pageNo;
+        setLeft(left - 75);
+        setPageNo(pageNo + 1);
+        props.setGlobalPageNo(tempPageNo + 1);
+      }
       props.setHorzontalNavigate(0);
-      setLeft(left - 75);
     } else if (props.navigate === -1) {
-      setLeft(left + 75);
+      if (pageNo > 0) {
+        tempPageNo = pageNo;
+        setLeft(left + 75);
+        setPageNo(pageNo - 1);
+        props.setGlobalPageNo(tempPageNo - 1);
+      }
       props.setHorzontalNavigate(0);
     } else {
     }
@@ -27,11 +40,12 @@ const PageContainer = props => {
 };
 
 const mapStateToProps = state => {
-  return { navigate: state.navigate };
+  return { navigate: state.navigate, pageNo: state.pageNo };
 };
 function mapDispatchToProps(dispatch) {
   return {
-    setHorzontalNavigate: payload => dispatch(setHorzontalNavigate(payload))
+    setHorzontalNavigate: payload => dispatch(setHorzontalNavigate(payload)),
+    setGlobalPageNo: payload => dispatch(setPageNo(payload))
   };
 }
 

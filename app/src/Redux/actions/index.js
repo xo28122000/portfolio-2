@@ -1,4 +1,4 @@
-import { ADD1, HORIZONTAL_NAVIGATE } from "../constants";
+import { ADD1, HORIZONTAL_NAVIGATE, SETPAGENO } from "../constants";
 
 // export function addArticle(payload) {
 //   return { type: ADD1, payload };
@@ -10,4 +10,8 @@ export function addOne() {
 
 export function setHorzontalNavigate(payload = null) {
   return { type: HORIZONTAL_NAVIGATE, payload };
+}
+
+export function setPageNo(payload = 0) {
+  return { type: SETPAGENO, payload };
 }

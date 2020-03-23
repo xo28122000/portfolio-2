@@ -9,10 +9,14 @@ import { setHorzontalNavigate } from "../../Redux/actions";
 
 const Footer = props => {
   const nextClick = () => {
-    if (props.navigate === 0) props.setHorzontalNavigate(1);
+    if (props.navigate === 0) {
+      props.setHorzontalNavigate(1);
+    }
   };
   const prevClick = () => {
-    if (props.navigate === 0) props.setHorzontalNavigate(-1);
+    if (props.navigate === 0) {
+      props.setHorzontalNavigate(-1);
+    }
   };
   return (
     <div id="Footer-root">
