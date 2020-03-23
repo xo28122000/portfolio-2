@@ -9,7 +9,8 @@
   height: 80vh;
   width: 60%;
 
-  overflow: none;
+  overflow-x: none;
+  overflow-y: none;
 
   font-size: 40px;
   background-color: #d4e4f5;

@@ -5,21 +5,23 @@ import { connect } from "react-redux";
 import { setHorzontalNavigate } from "../../Redux/actions";
 
 const HorizontalScrollAres = props => {
-  const [pagePosition, setPagePosition] = useState([20, 85, 150]);
+  const [pagePosition, setPagePosition] = useState([20, 95, 170]);
   useEffect(() => {
     if (props.navigate === 1) {
-      console.log("moved next");
-      for (var i = 0; i < pagePosition.length; i++) {
-        pagePosition[i] -= 65;
+      if (pagePosition[2] != 20) {
+        for (var i = 0; i < pagePosition.length; i++) {
+          pagePosition[i] -= 75;
+        }
+        setPagePosition(pagePosition);
       }
-      setPagePosition(pagePosition);
       props.setHorzontalNavigate(0);
     } else if (props.navigate === -1) {
-      console.log("moved back");
-      for (i = 0; i < pagePosition.length; i++) {
-        pagePosition[i] += 65;
+      if (pagePosition[0] != 20) {
+        for (i = 0; i < pagePosition.length; i++) {
+          pagePosition[i] += 75;
+        }
+        setPagePosition(pagePosition);
       }
-      setPagePosition(pagePosition);
       props.setHorzontalNavigate(0);
     }
 

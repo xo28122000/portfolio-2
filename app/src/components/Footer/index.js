@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faForward, faBackward } from "@fortawesome/free-solid-svg-icons";
@@ -8,9 +8,6 @@ import { connect } from "react-redux";
 import { setHorzontalNavigate } from "../../Redux/actions";
 
 const Footer = props => {
-  useEffect(() => {
-    console.log(props.navigate);
-  });
   const nextClick = () => {
     if (props.navigate === 0) props.setHorzontalNavigate(1);
   };

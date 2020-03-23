@@ -18,7 +18,7 @@
   background-color: #c0c0c0;
   transition: background-color 1s;
 
-  overflow-y: none;
+  overflow-y: auto;
   overflow-x: none;
 }
 

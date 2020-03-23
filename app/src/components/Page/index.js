@@ -3,7 +3,7 @@ import "./Page.css";
 
 const Page = props => {
   return (
-    <div id="Page-root" style={{ overflowY: props.scroll }}>
+    <div id="Page-root">
       A page
       <br /> <br /> <br /> A page
       <br /> <br /> <br /> A page
