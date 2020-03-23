@@ -3,8 +3,7 @@
   top: 10vh;
   bottom: 10vh;
   left: 20%;
-
-  visibility: visible;
+  transition: left ease 2s;
 
   height: 80vh;
   width: 60%;

@@ -6,27 +6,26 @@ import { setHorzontalNavigate } from "../../Redux/actions";
 
 const HorizontalScrollAres = props => {
   const [pagePosition, setPagePosition] = useState([20, 95, 170]);
-  useEffect(() => {
-    if (props.navigate === 1) {
-      if (pagePosition[2] != 20) {
-        for (var i = 0; i < pagePosition.length; i++) {
-          pagePosition[i] -= 75;
-        }
-        setPagePosition(pagePosition);
-      }
-      props.setHorzontalNavigate(0);
-    } else if (props.navigate === -1) {
-      if (pagePosition[0] != 20) {
-        for (i = 0; i < pagePosition.length; i++) {
-          pagePosition[i] += 75;
-        }
-        setPagePosition(pagePosition);
-      }
-      props.setHorzontalNavigate(0);
-    }
+  // useEffect(() => {
+  //   if (props.navigate === 1) {
+  //     if (pagePosition[2] != 20) {
+  //       for (var i = 0; i < pagePosition.length; i++) {
+  //         pagePosition[i] -= 75;
+  //       }
+  //       setPagePosition(pagePosition);
+  //     }
+  //     props.setHorzontalNavigate(0);
+  //   } else if (props.navigate === -1) {
+  //     if (pagePosition[0] != 20) {
+  //       for (i = 0; i < pagePosition.length; i++) {
+  //         pagePosition[i] += 75;
+  //       }
+  //       setPagePosition(pagePosition);
+  //     }
+  //     props.setHorzontalNavigate(0);
+  //   }
 
-    console.log();
-  });
+  // });
 
   return (
     <div
@@ -40,9 +39,9 @@ const HorizontalScrollAres = props => {
         justifyContent: "center"
       }}
     >
-      <PageContainer left={pagePosition[0].toString() + "%"} />
-      <PageContainer left={pagePosition[1].toString() + "%"} />
-      <PageContainer left={pagePosition[2].toString() + "%"} />
+      <PageContainer left={pagePosition[0]} />
+      <PageContainer left={pagePosition[1]} />
+      <PageContainer left={pagePosition[2]} />
     </div>
   );
 };
