@@ -1,9 +1,9 @@
 .StickyNote-root {
   margin: 0;
-  padding-top: 1.5vh;
-  padding-left: 1.5vh;
-  padding-right: 1.5vh;
-  padding-bottom: 1.5vh;
+  padding-top: 2.5vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-bottom: 2.5vh;
 
   height: fit-content;
   width: fit-content;
@@ -14,18 +14,36 @@
 
   font-size: 2.7vh;
 }
+.StickyNote-root:hover {
+  cursor: cell;
+  /* url(myBall.cur),auto */
+}
 
 .StickyNote-txt {
   margin: 0;
+  padding-top: 1.5vh;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-bottom: 1.5vh;
 
   height: 17vh;
-  width: 10vw;
+  width: 15vw;
+
+  min-width: 125px;
+
   background-color: RGBA(255, 235, 59, 1);
 }
 
 .StickyNote-top {
   margin: 0;
-  background-color: RGBA(235, 215, 39, 1);
+
+  padding-left: 1vw;
+  padding-right: 1vw;
+
   height: 4vh;
-  width: 10vw;
+  width: 15vw;
+
+  min-width: 125px;
+
+  background-color: RGBA(235, 215, 39, 1);
 }

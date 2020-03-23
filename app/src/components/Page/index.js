@@ -28,8 +28,22 @@ const Page = props => {
       />
       <Polaroid img={poloroidImg2} txt={"here "} tilt="-10deg" />
 
-      <StickyNote txt={"here "} tilt="0deg" />
-      <StickyNote txt={"here "} tilt="0deg" />
+      <StickyNote
+        txt={"here"}
+        tilt="5deg"
+        R={255}
+        G={235}
+        B={59}
+        alignment="center"
+      />
+      <StickyNote
+        txt={"here"}
+        tilt="-10deg"
+        R={163}
+        G={246}
+        B={59}
+        alignment="start"
+      />
     </div>
   );
 };

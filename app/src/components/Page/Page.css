@@ -23,7 +23,8 @@
 }
 
 #Page-root:hover {
-  cursor: cell;
+  cursor: crosshair;
+  /* url(myBall.cur),auto */
   background-color: #868686;
 }
 

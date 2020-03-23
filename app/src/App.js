@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 
-import Header from "./components/Header";
 import HorizontalScrollArea from "./components/HorizontalScrollArea";
 import Footer from "./components/Footer";
 

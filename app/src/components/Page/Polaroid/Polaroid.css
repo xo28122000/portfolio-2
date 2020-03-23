@@ -1,9 +1,9 @@
 .Polaroid-root {
   margin: 0;
-  padding-top: 1.5vh;
-  padding-left: 1.5vh;
-  padding-right: 1.5vh;
-  padding-bottom: 1.5vh;
+  padding-top: 3vh;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+  padding-bottom: 3vh;
 
   height: fit-content;
   width: fit-content;
@@ -13,8 +13,27 @@
 
   /* transform: rotate(5deg); */
 
+  /* background-color: #ffffff; */
+}
+
+.Polaroid-container {
+  padding-top: 1.5vh;
+  padding-left: 1.5vh;
+  padding-right: 1.5vh;
+  padding-bottom: 1.5vh;
+
+  height: fit-content;
+  width: fit-content;
+
   background-color: #ffffff;
+
   overflow: hidden;
+}
+.Polaroid-container:hover {
+  cursor: cell;
+  /* url(myBall.cur),auto */
+
+  opacity: 80%;
 }
 
 .Polaroid-img {
