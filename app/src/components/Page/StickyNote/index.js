@@ -28,7 +28,7 @@ const StickyNote = props => {
             "RGB(" + props.R + "," + props.G + "," + props.B + ")"
         }}
       >
-        <span style={{ whiteSpace: "pre-line" }}>{props.txt}</span>
+        <p style={{ whiteSpace: "pre-line" }}>{props.children}</p>
       </div>
     </div>
   );

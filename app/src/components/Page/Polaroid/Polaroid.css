@@ -49,6 +49,7 @@
   padding-bottom: 0.5vh;
 
   height: fit-content;
+  max-width: 40vw;
 
   text-align: center;
   font-size: 5vh;

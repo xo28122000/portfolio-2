@@ -14,8 +14,8 @@
 
   background-color: transparent;
 
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow-y: visible;
+  overflow-x: visible;
 }
 
 #Page-root:hover {

@@ -1,6 +1,6 @@
 .PageContainer-root {
   position: fixed;
-  top: 5vh;
+  top: 1vh;
   bottom: 10vh;
   left: 20%;
   transition: left ease 2s;
@@ -8,7 +8,7 @@
   width: 70vw;
 
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: scroll;
 
   font-size: 40px;
   background-color: transparent;

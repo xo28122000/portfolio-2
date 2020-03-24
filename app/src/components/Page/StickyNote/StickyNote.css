@@ -29,7 +29,7 @@
   padding-bottom: 1.5vh;
 
   height: fit-content;
-  width: 15vw;
+  width: 16vw;
 
   min-width: 125px;
 
@@ -39,6 +39,7 @@
   word-spacing: 3px;
   letter-spacing: 5px;
   font-family: "Shadows Into Light", cursive;
+  word-break: normal;
 }
 
 .StickyNote-top {
@@ -48,7 +49,7 @@
   padding-right: 1vw;
 
   height: 4vh;
-  width: 15vw;
+  width: 16vw;
 
   min-width: 125px;
 
