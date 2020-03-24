@@ -8,9 +8,11 @@
   height: fit-content;
   width: fit-content;
 
-  max-height: 70vh;
-  max-width: 35vw;
+  /* max-height: 70vh;
+  max-width: 35vw; */
 
+  position: relative;
+  z-index: 20;
   /* transform: rotate(5deg); */
 
   /* background-color: #ffffff; */
@@ -37,8 +39,8 @@
 }
 
 .Polaroid-img {
-  max-height: 55vh;
-  max-width: 35vw;
+  max-height: 60vh;
+  max-width: 50vw;
 
   overflow: hidden;
 }
@@ -48,8 +50,7 @@
 
   height: fit-content;
 
-  max-width: 35vw;
-
   text-align: center;
-  font-size: 3.5vh;
+  font-size: 5vh;
+  font-family: "Permanent Marker", cursive;
 }

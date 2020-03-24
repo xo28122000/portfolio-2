@@ -3,10 +3,10 @@
 
   bottom: 0px;
 
-  width: 100%;
+  width: 100vw;
   height: 10vh;
 
-  background-color: #ecaaaa;
+  background-color: white;
 }
 
 #Footer-container {

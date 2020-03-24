@@ -35,10 +35,7 @@ const Footer = props => {
             style={{ height: "8vh" }}
           />
         </div>
-        <div
-          className="Footer-elements"
-          style={{ flex: "3", backgroundColor: "#f5f5d4", fontSize: "7vh" }}
-        >
+        <div className="Footer-elements" style={{ flex: "3", fontSize: "7vh" }}>
           {title}
         </div>
         <div className="Footer-elements">

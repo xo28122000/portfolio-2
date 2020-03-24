@@ -2,19 +2,6 @@ import React, { useEffect } from "react";
 import "./StickyNote.css";
 
 const StickyNote = props => {
-  useEffect(() => {
-    if (window.innerWidth < 1050) {
-      // for mobile phones with a smaller width
-      const SiickyNoteTop = document.getElementsByClassName("StickyNote-top");
-      const SiickyNoteTxt = document.getElementsByClassName("StickyNote-txt");
-      const setWidth = (window.innerWidth * 0.3).toString() + "px";
-      for (let i = 0; i < SiickyNoteTop.length; i++) {
-        console.log(setWidth);
-        SiickyNoteTop[i].style.width = setWidth;
-        SiickyNoteTxt[i].style.width = setWidth;
-      }
-    }
-  });
   return (
     <div
       className="StickyNote-root"
@@ -41,7 +28,7 @@ const StickyNote = props => {
             "RGB(" + props.R + "," + props.G + "," + props.B + ")"
         }}
       >
-        {props.txt}
+        <span style={{ whiteSpace: "pre-line" }}>{props.txt}</span>
       </div>
     </div>
   );

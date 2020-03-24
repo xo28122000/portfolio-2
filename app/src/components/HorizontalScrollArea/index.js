@@ -1,8 +1,10 @@
 import React, { useEffect } from "react";
 import PageContainer from "../PageContainer";
+import AboutPage from "../Page/AboutPage";
+import Page from "../Page/index";
 
 const HorizontalScrollAres = props => {
-  const pagePosition = [20, 95, 170];
+  const pagePosition = [15, 95, 175];
 
   return (
     <div
@@ -16,9 +18,9 @@ const HorizontalScrollAres = props => {
         justifyContent: "center"
       }}
     >
-      <PageContainer left={pagePosition[0]} />
-      <PageContainer left={pagePosition[1]} />
-      <PageContainer left={pagePosition[2]} />
+      <PageContainer left={pagePosition[0]} page={<AboutPage />} />
+      <PageContainer left={pagePosition[1]} page={<Page />} />
+      <PageContainer left={pagePosition[2]} page={<Page />} />
     </div>
   );
 };

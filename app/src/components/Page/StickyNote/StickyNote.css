@@ -8,6 +8,8 @@
   height: fit-content;
   width: fit-content;
 
+  position: relative;
+  z-index: 30;
   /* transform: rotate(5deg); */
 
   overflow: hidden;
@@ -26,12 +28,17 @@
   padding-right: 1vw;
   padding-bottom: 1.5vh;
 
-  height: 17vh;
+  height: fit-content;
   width: 15vw;
 
   min-width: 125px;
 
   background-color: RGBA(255, 235, 59, 1);
+
+  font-size: 3vh;
+  word-spacing: 3px;
+  letter-spacing: 5px;
+  font-family: "Shadows Into Light", cursive;
 }
 
 .StickyNote-top {

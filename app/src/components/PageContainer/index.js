@@ -14,7 +14,7 @@ const PageContainer = props => {
     if (props.navigate === 1) {
       if (pageNo < 2) {
         tempPageNo = pageNo;
-        setLeft(left - 75);
+        setLeft(left - 80);
         setPageNo(pageNo + 1);
         props.setGlobalPageNo(tempPageNo + 1);
       }
@@ -22,7 +22,7 @@ const PageContainer = props => {
     } else if (props.navigate === -1) {
       if (pageNo > 0) {
         tempPageNo = pageNo;
-        setLeft(left + 75);
+        setLeft(left + 80);
         setPageNo(pageNo - 1);
         props.setGlobalPageNo(tempPageNo - 1);
       }
@@ -33,7 +33,7 @@ const PageContainer = props => {
 
   return (
     <div className="PageContainer-root" style={{ left: left.toString() + "%" }}>
-      <Page />
+      {props.page}
     </div>
   );
 };

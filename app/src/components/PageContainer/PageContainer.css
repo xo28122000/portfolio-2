@@ -5,11 +5,11 @@
   left: 20%;
   transition: left ease 2s;
 
-  width: 60vw;
+  width: 70vw;
 
-  overflow-x: none;
-  overflow-y: none;
+  overflow-x: hidden;
+  overflow-y: hidden;
 
   font-size: 40px;
-  background-color: RGB(211, 245, 212);
+  background-color: transparent;
 }
