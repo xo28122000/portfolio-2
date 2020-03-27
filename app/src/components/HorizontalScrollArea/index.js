@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
 import PageContainer from "../PageContainer";
-import AboutPage1 from "../Page/AboutPages/AboutPage1";
-import AboutPage2 from "../Page/AboutPages/AboutPage2";
+// import AboutPage1 from "../Page/AboutPages/AboutPage1";
+// import AboutPage2 from "../Page/AboutPages/AboutPage2";
 import ExperiencePage1 from "../Page/ExperiencePages/ExperiencePage1";
+// import ExperiencePage2 from "../Page/ExperiencePages/ExperiencePage2";
 import Page from "../Page/index";
 
 const HorizontalScrollAres = props => {
@@ -21,8 +22,8 @@ const HorizontalScrollAres = props => {
       }}
     >
       <PageContainer left={pagePosition[0]} page={<ExperiencePage1 />} />
-      <PageContainer left={pagePosition[1]} page={<AboutPage2 />} />
-      <PageContainer left={pagePosition[2]} page={<Page />} />
+      {/* <PageContainer left={pagePosition[1]} page={<AboutPage2 />} />
+      <PageContainer left={pagePosition[2]} page={<Page />} /> */}
     </div>
   );
 };
