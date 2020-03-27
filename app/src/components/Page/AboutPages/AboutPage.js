@@ -37,7 +37,7 @@ const AboutPage = props => {
             <br />- Sketched the structure for competition
           </div>
         }
-        containerColor="red"
+        containerColor="#ec756c"
       />
       <PolaroidContainer
         id="Gators"
@@ -56,7 +56,7 @@ const AboutPage = props => {
             Thats next year!!
           </div>
         }
-        containerColor="red"
+        containerColor="#ec756c"
       />
       \
     </div>

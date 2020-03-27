@@ -54,7 +54,7 @@ const ExperiencePage = props => {
             <br />- Sketched the structure for competition
           </div>
         }
-        containerColor="red"
+        containerColor="#ec756c"
       />
       <PolaroidContainer
         id="SpeedLegal"
@@ -73,7 +73,7 @@ const ExperiencePage = props => {
             of features from PDF using python
           </div>
         }
-        containerColor="red"
+        containerColor="#ec756c"
       />
       <PolaroidContainer
         id="TASC"
@@ -92,7 +92,7 @@ const ExperiencePage = props => {
             </span>
           </div>
         }
-        containerColor="red"
+        containerColor="#ec756c"
       />
       <div className="container-fluid">
         <PolaroidContainer
@@ -107,7 +107,7 @@ const ExperiencePage = props => {
               Need help with Data Structures hmu!
             </div>
           }
-          containerColor="red"
+          containerColor="#ec756c"
         />
       </div>
       {/* <div className="col-sm-3">

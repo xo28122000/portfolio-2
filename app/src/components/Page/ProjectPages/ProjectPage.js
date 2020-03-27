@@ -6,13 +6,13 @@ import PolaroidContainer from "../Polaroid/PolaroidContainer";
 const ProjectPage = props => {
   const poloroidImg1 = (
     <img
-      src={require("../../../assets/images/SFHacksTeam.png")}
+      src={require("../../../assets/images/HealthDetech.png")}
       className="Polaroid-img"
     />
   );
   const poloroidImg2 = (
     <img
-      src={require("../../../assets/images/TASC.jpg")}
+      src={require("../../../assets/images/RecoveryT.jpg")}
       className="Polaroid-img"
     />
   );
@@ -32,24 +32,43 @@ const ProjectPage = props => {
   return (
     <div id="Page-root">
       <PolaroidContainer
-        id="SFHACKS"
+        id="HealthDetech"
         img={poloroidImg1}
-        txt={"SF Hacks 2020"}
+        txt={"HealthDe.tech"}
         tilt="5deg"
         details={
           <div>
-            Web developer and Organiser for SF Hacks 2020
-            <br /> - Build sfhacks2020.com with React.js
-            <br />- Reached out to sponsors
-            <br />- Sketched the structure for competition
+            Link:
+            <span style={{ textDecoration: "underline" }}>
+              <a href="https://github.com/xo28122000/HealthDetect">
+                github.com/xo28122000/HealthDetect
+              </a>
+            </span>
+            <br />
+            The aim of the project is to serve the medical purposes in third
+            world countries where medical infrastructure is not very strong.
+            <br />
+            This app will help them determine what problem they might be facing
+            either by using a photo or by answering series of questions, direct
+            them to the required resources and send reports to a government body
+            with the list of diseases detected and its metadata to improve the
+            health care of that region accordingly.
+            <br />
+            My contributions:
+            <br />◦ Developed a React.js front-end for users to sign up/in and
+            upload a picture of the diseased body part.
+            <br />◦ Trained CNN models to detect diseases using Tensorflow API
+            and Google Cloud Platform.
+            <br />◦ Deployed a restful flask server to use the trained models to
+            predict the disease in pictures requested by the user.
           </div>
         }
-        containerColor="red"
+        containerColor="#ec756c"
       />
       <PolaroidContainer
-        id="SpeedLegal"
-        img={poloroidImg4}
-        txt={"1st internship"}
+        id="RecoveryCoach"
+        img={poloroidImg2}
+        txt={"Recovery Coach"}
         tilt="5deg"
         details={
           <div>
@@ -63,7 +82,7 @@ const ProjectPage = props => {
             of features from PDF using python
           </div>
         }
-        containerColor="red"
+        containerColor="#ec756c"
       />
       <PolaroidContainer
         id="TASC"
@@ -82,7 +101,7 @@ const ProjectPage = props => {
             </span>
           </div>
         }
-        containerColor="red"
+        containerColor="#ec756c"
       />
       <div className="container-fluid">
         <PolaroidContainer
@@ -97,7 +116,7 @@ const ProjectPage = props => {
               Need help with Data Structures hmu!
             </div>
           }
-          containerColor="red"
+          containerColor="#ec756c"
         />
       </div>
     </div>
