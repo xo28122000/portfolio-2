@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import PageContainer from "../PageContainer";
 // import AboutPage1 from "../Page/AboutPages/AboutPage1";
 // import AboutPage2 from "../Page/AboutPages/AboutPage2";
-import ExperiencePage1 from "../Page/ExperiencePages/ExperiencePage1";
+import ExperiencePage from "../Page/ExperiencePages/ExperiencePage";
 // import ExperiencePage2 from "../Page/ExperiencePages/ExperiencePage2";
 import Page from "../Page/index";
 
@@ -12,7 +12,7 @@ const HorizontalScrollAres = props => {
   return (
     <div
       style={{
-        backgroundColor: "#d4f5d4",
+        backgroundColor: "#121212",
         height: "90vh",
         width: "100vw",
         // top: "10vh",
@@ -21,7 +21,7 @@ const HorizontalScrollAres = props => {
         justifyContent: "center"
       }}
     >
-      <PageContainer left={pagePosition[0]} page={<ExperiencePage1 />} />
+      <PageContainer left={pagePosition[0]} page={<ExperiencePage />} />
       {/* <PageContainer left={pagePosition[1]} page={<AboutPage2 />} />
       <PageContainer left={pagePosition[2]} page={<Page />} /> */}
     </div>

@@ -18,27 +18,22 @@ const PolaroidContainer = props => {
       document.getElementById(props.id + "-details").style.opacity = "0%";
     } else {
       setOpen(true);
-      setdetails("Web developer and Organiser for SF Hacks 2020");
+      setdetails(props.details);
       document.getElementById(props.id + "-container").style.backgroundColor =
-        "bisque";
+        props.containerColor;
       document.getElementById(props.id + "-details").style.opacity = "100%";
     }
   };
   return (
-    <div
-      id={props.id + "-container"}
-      className="PolaroidContainer-root"
-      onClick={toggleDetails}
-      onMouseEnter={toggleDetails}
-      onMouseLeave={toggleDetails}
-    >
-      <div className="row">
+    <div id={props.id + "-container"} className="PolaroidContainer-root">
+      <div className="row" style={{ padding: 0, margin: 0 }}>
         <div className="col-md-auto">
           <Polaroid
             id={props.id}
             img={props.img}
             txt={props.txt}
             tilt={props.tilt}
+            toggleDetails={toggleDetails}
           />
         </div>
         <div

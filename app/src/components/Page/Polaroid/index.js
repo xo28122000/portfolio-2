@@ -18,7 +18,7 @@ const Polaroid = props => {
     }
   };
   return (
-    <div id={props.id} className="Polaroid-root" onClick={console.log("here")}>
+    <div id={props.id} className="Polaroid-root" onClick={props.toggleDetails}>
       <div
         className="Polaroid-container"
         style={{ transform: "rotate(" + props.tilt + ")" }}
