@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./PageContainer.css";
-
-import Page from "../Page";
-
 import { connect } from "react-redux";
 import { setHorzontalNavigate, setPageNo } from "../../Redux/actions";
+import { last_page_no, page_jump } from "../../constants";
 
 const PageContainer = props => {
   const [left, setLeft] = useState(props.left);
@@ -12,9 +10,9 @@ const PageContainer = props => {
   var tempPageNo;
   useEffect(() => {
     if (props.navigate === 1) {
-      if (pageNo < 2) {
+      if (pageNo < last_page_no) {
         tempPageNo = pageNo;
-        setLeft(left - 80);
+        setLeft(left - page_jump);
         setPageNo(pageNo + 1);
         props.setGlobalPageNo(tempPageNo + 1);
       }
@@ -22,7 +20,7 @@ const PageContainer = props => {
     } else if (props.navigate === -1) {
       if (pageNo > 0) {
         tempPageNo = pageNo;
-        setLeft(left + 80);
+        setLeft(left + page_jump);
         setPageNo(pageNo - 1);
         props.setGlobalPageNo(tempPageNo - 1);
       }

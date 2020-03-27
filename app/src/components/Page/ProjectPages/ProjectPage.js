@@ -22,9 +22,9 @@ const ProjectPage = props => {
       className="Polaroid-img"
     />
   );
-  const poloroidImg4 = (
+  const poloroidGif1 = (
     <img
-      src={require("../../../assets/images/SpeedLegal.png")}
+      src={require("../../../assets/gif/RideAid.gif")}
       className="Polaroid-img"
     />
   );
@@ -72,53 +72,46 @@ const ProjectPage = props => {
         tilt="5deg"
         details={
           <div>
-            My first summer internship in 2019
-            <br />
-            SpeedLegal is a startup working on streamlining
-            <br /> legal due diligence and document review
-            <br />I worked on developing and designing a web app using React.js
-            to render the labeled information from the ML model.
-            <br /> I also worked on automating parsing, extraction and scaling
-            of features from PDF using python
+            Link:
+            <span style={{ textDecoration: "underline" }}>
+              <a href="https://github.com/joshuaaguilar20/MIT-HealthHacks">
+                github.com/joshuaaguilar20/MIT-HealthHacks
+              </a>
+            </span>
+            <br />◦ Developed a web app to increase the efficiency of physical
+            therapy centers by giving the power of supervising to AI.
+            <br />◦ Traced the movements of joints using poseNet and compared to
+            the correct exercise pattern uploaded by the PT.
+            <br />◦ Won 3rd place in self care in chronic diseases track.
           </div>
         }
         containerColor="#ec756c"
       />
       <PolaroidContainer
-        id="TASC"
-        img={poloroidImg2}
-        txt={"Tutor"}
+        id="RideAid"
+        img={poloroidGif1}
+        txt={"RideAid"}
         tilt="-5deg"
         details={
           <div>
-            I tutor at TASC-SFSU <br />
-            Book an appointment today
-            <br />
+            Link:
             <span style={{ textDecoration: "underline" }}>
-              <a href="https://ueap.sfsu.edu/tutoring">
-                ueap.sfsu.edu/ tutoring
+              <a href="https://github.com/helenamerk/hackmobility">
+                github.com/helenamerk/hackmobility
               </a>
             </span>
+            <br />
+            HackMobility 2019 Carpooling made simpler, safer and efficient
+            <br />◦ Developed a React Native app for user to start/join a pool
+            and integrated the SmartCar’s API to verify and unlock the car.
+            <br />◦ Developed a data processing back-end to clean and serve the
+            data to front-end after fetching it from a PostgreSQL database.
+            <br />◦ Won the Shell Grand Prize and an award for the best use of
+            Smartcar API.
           </div>
         }
         containerColor="#ec756c"
       />
-      <div className="container-fluid">
-        <PolaroidContainer
-          id="SI"
-          img={poloroidImg3}
-          txt={"Lecturer"}
-          tilt="5deg"
-          details={
-            <div>
-              Supplemental course instructor for Data Structures(Java).
-              <br />
-              Need help with Data Structures hmu!
-            </div>
-          }
-          containerColor="#ec756c"
-        />
-      </div>
     </div>
   );
 };
