@@ -9,5 +9,17 @@
 
   overflow: none;
 
-  cursor: url("./assets/images/pointer2.gif"), auto;
+  cursor: url("./assets/images/pointergif/1.png"), auto;
+}
+
+@keyframes animate {
+  0% {
+    cursor: url("./assets/images/pointergif/2.png"), auto;
+  }
+  50% {
+    cursor: url("./assets/images/pointergif/1.png"), auto;
+  }
+  100% {
+    cursor: url("./assets/images/pointergif/2.png"), auto;
+  }
 }

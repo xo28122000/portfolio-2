@@ -1,10 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 
 import HorizontalScrollArea from "./components/HorizontalScrollArea";
 import Footer from "./components/Footer";
 
 function App() {
+  const [customCursor, setcustomCursor] = useState();
+
   useEffect(() => {
     if (window.innerWidth < 950) {
       //   // for mobile phones with a smaller width
@@ -25,12 +27,14 @@ function App() {
     }
   });
   const appMouseUp = () => {
-    document.getElementById("App-Root").style.cursor =
-      'url("./assets/images/dot.png"), auto';
+    setcustomCursor({
+      animation: "none"
+    });
   };
   const appMouseDown = () => {
-    document.getElementById("App-Root").style.cursor =
-      'url("./assets/images/dot.png"), auto';
+    setcustomCursor({
+      animation: "animate 0.50s infinite"
+    });
   };
   return (
     <div
