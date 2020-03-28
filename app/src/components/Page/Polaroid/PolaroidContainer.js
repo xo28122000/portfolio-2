@@ -15,13 +15,14 @@ const PolaroidContainer = props => {
       setdetails(null);
       document.getElementById(props.id + "-container").style.backgroundColor =
         "transparent";
-      document.getElementById(props.id + "-details").style.opacity = "0%";
+      document.getElementById(props.id + "-details").style.opacity = "0";
     } else {
       setOpen(true);
       setdetails(props.details);
       document.getElementById(props.id + "-container").style.backgroundColor =
         props.containerColor;
-      document.getElementById(props.id + "-details").style.opacity = "100%";
+      document.getElementById(props.id + "-details").style.opacity = "1";
+      console.log(document.getElementById(props.id + "-details").style.opacity);
     }
   };
   return (

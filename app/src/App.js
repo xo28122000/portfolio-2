@@ -5,7 +5,7 @@ import HorizontalScrollArea from "./components/HorizontalScrollArea";
 import Footer from "./components/Footer";
 
 function App() {
-  const [customCursor, setcustomCursor] = useState();
+  const [customCursor, setcustomCursor] = useState({});
 
   useEffect(() => {
     if (window.innerWidth < 950) {
