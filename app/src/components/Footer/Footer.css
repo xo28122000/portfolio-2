@@ -18,8 +18,22 @@
 .Footer-elements {
   flex: 1;
   flex-grow: 1;
+
   text-align: center;
+
   height: 10vh;
+
   padding-top: 1vh;
   padding-bottom: 1vh;
+}
+
+.Footer-icons {
+  color: #cfcfcf;
+
+  border-width: 2px;
+  border-style: solid;
+}
+
+.Footer-icons:hover {
+  color: white;
 }

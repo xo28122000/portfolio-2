@@ -27,13 +27,8 @@ const Footer = props => {
   return (
     <div id="Footer-root">
       <div id="Footer-container">
-        <div className="Footer-elements">
-          <FontAwesomeIcon
-            icon={faBackward}
-            size="3x"
-            onClick={prevClick}
-            style={{ height: "8vh", color: "#cfcfcf" }}
-          />
+        <div className="Footer-elements Footer-icons" onClick={prevClick}>
+          <FontAwesomeIcon icon={faBackward} size="3x" />
         </div>
         <div
           className="Footer-elements"
@@ -41,13 +36,8 @@ const Footer = props => {
         >
           {title}
         </div>
-        <div className="Footer-elements">
-          <FontAwesomeIcon
-            icon={faForward}
-            size="3x"
-            onClick={nextClick}
-            style={{ height: "8vh", color: "#cfcfcf" }}
-          />
+        <div className="Footer-elements Footer-icons" onClick={nextClick}>
+          <FontAwesomeIcon icon={faForward} size="3x" />
         </div>
       </div>
     </div>
