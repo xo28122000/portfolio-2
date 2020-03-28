@@ -32,10 +32,13 @@ const Footer = props => {
             icon={faBackward}
             size="3x"
             onClick={prevClick}
-            style={{ height: "8vh", color: "#606060" }}
+            style={{ height: "8vh", color: "#cfcfcf" }}
           />
         </div>
-        <div className="Footer-elements" style={{ flex: "3", fontSize: "7vh" }}>
+        <div
+          className="Footer-elements"
+          style={{ flex: "3", fontSize: "6vh", color: "#606060" }}
+        >
           {title}
         </div>
         <div className="Footer-elements">
@@ -43,7 +46,7 @@ const Footer = props => {
             icon={faForward}
             size="3x"
             onClick={nextClick}
-            style={{ height: "8vh", color: "#606060" }}
+            style={{ height: "8vh", color: "#cfcfcf" }}
           />
         </div>
       </div>

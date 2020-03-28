@@ -1,0 +1,8 @@
+.HorizontalScrollArea-root {
+  background-color: #121212;
+  height: 90vh;
+  width: 100vw;
+  bottom: 10vh;
+  position: fixed;
+  justify-content: center;
+}

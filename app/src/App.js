@@ -24,8 +24,21 @@ function App() {
       //   }
     }
   });
+  const appMouseUp = () => {
+    document.getElementById("App-Root").style.cursor =
+      'url("./assets/images/dot.png"), auto';
+  };
+  const appMouseDown = () => {
+    document.getElementById("App-Root").style.cursor =
+      'url("./assets/images/dot.png"), auto';
+  };
   return (
-    <div className="App-Root">
+    <div
+      id="App-Root"
+      style={customCursor}
+      onMouseDown={appMouseDown}
+      onMouseUp={appMouseUp}
+    >
       {/* <Header /> */}
       <HorizontalScrollArea />
       <Footer />

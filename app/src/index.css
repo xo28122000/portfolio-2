@@ -2,7 +2,18 @@ html,
 body {
   margin: 0px;
   padding: 0px;
-  background-color: rgba(0, 0, 0, 1);
+  background-color: #303030;
 
   overflow: none;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: #d4d4d4;
+  background: transparent;
+}
+
+::selection {
+  color: #d4d4d4;
+  background: transparent;
 }

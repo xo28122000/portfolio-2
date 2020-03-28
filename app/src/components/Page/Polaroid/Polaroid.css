@@ -28,7 +28,7 @@
   height: fit-content;
   width: fit-content;
 
-  background-color: #606060;
+  background-color: #3c3c3c;
 
   border-color: #8c8c8c;
   border-width: 1.5px;
@@ -63,6 +63,7 @@
   text-align: center;
   font-size: 3vh;
   font-family: "Permanent Marker", cursive;
+  color: #bcbcbc;
 }
 
 .PolaroidContainer-root {
@@ -76,6 +77,8 @@
   width: 100%;
 
   background-color: transparent;
+
+  border-radius: 20px;
 
   transition: background-color 1s;
 }

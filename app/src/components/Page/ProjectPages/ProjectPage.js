@@ -16,12 +16,7 @@ const ProjectPage = props => {
       className="Polaroid-img"
     />
   );
-  const poloroidImg3 = (
-    <img
-      src={require("../../../assets/images/SI.jpg")}
-      className="Polaroid-img"
-    />
-  );
+
   const poloroidGif1 = (
     <img
       src={require("../../../assets/gif/RideAid.gif")}
@@ -30,7 +25,32 @@ const ProjectPage = props => {
   );
 
   return (
-    <div id="Page-root">
+    <div className="Page-root">
+      <PolaroidContainer
+        id="RecoveryCoach"
+        img={poloroidImg2}
+        txt={"Recovery Coach"}
+        tilt="5deg"
+        details={
+          <div>
+            Link:
+            <span style={{ textDecoration: "underline" }}>
+              <a
+                href="https://github.com/xo28122000/RecoveryCoach"
+                target="_blank"
+              >
+                github.com/xo28122000/RecoveryCoach
+              </a>
+            </span>
+            <br />◦ Developed a web app to increase the efficiency of physical
+            therapy centers by giving the power of supervising to AI.
+            <br />◦ Traced the movements of joints using poseNet and compared to
+            the correct exercise pattern uploaded by the PT.
+            <br />◦ Won 3rd place in self care in chronic diseases track.
+          </div>
+        }
+        containerColor="#8f8f8f"
+      />
       <PolaroidContainer
         id="HealthDetech"
         img={poloroidImg1}
@@ -40,7 +60,10 @@ const ProjectPage = props => {
           <div>
             Link:
             <span style={{ textDecoration: "underline" }}>
-              <a href="https://github.com/xo28122000/HealthDetect">
+              <a
+                href="https://github.com/xo28122000/HealthDetect"
+                target="_blank"
+              >
                 github.com/xo28122000/HealthDetect
               </a>
             </span>
@@ -63,30 +86,9 @@ const ProjectPage = props => {
             predict the disease in pictures requested by the user.
           </div>
         }
-        containerColor="#ec756c"
+        containerColor="#8f8f8f"
       />
-      <PolaroidContainer
-        id="RecoveryCoach"
-        img={poloroidImg2}
-        txt={"Recovery Coach"}
-        tilt="5deg"
-        details={
-          <div>
-            Link:
-            <span style={{ textDecoration: "underline" }}>
-              <a href="https://github.com/joshuaaguilar20/MIT-HealthHacks">
-                github.com/joshuaaguilar20/MIT-HealthHacks
-              </a>
-            </span>
-            <br />◦ Developed a web app to increase the efficiency of physical
-            therapy centers by giving the power of supervising to AI.
-            <br />◦ Traced the movements of joints using poseNet and compared to
-            the correct exercise pattern uploaded by the PT.
-            <br />◦ Won 3rd place in self care in chronic diseases track.
-          </div>
-        }
-        containerColor="#ec756c"
-      />
+
       <PolaroidContainer
         id="RideAid"
         img={poloroidGif1}
@@ -96,7 +98,10 @@ const ProjectPage = props => {
           <div>
             Link:
             <span style={{ textDecoration: "underline" }}>
-              <a href="https://github.com/helenamerk/hackmobility">
+              <a
+                href="https://github.com/helenamerk/hackmobility"
+                target="_blank"
+              >
                 github.com/helenamerk/hackmobility
               </a>
             </span>
@@ -110,7 +115,7 @@ const ProjectPage = props => {
             Smartcar API.
           </div>
         }
-        containerColor="#ec756c"
+        containerColor="#8f8f8f"
       />
     </div>
   );
