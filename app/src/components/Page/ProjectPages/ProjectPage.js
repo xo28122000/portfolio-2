@@ -3,15 +3,17 @@ import "../Page.css";
 
 import PolaroidContainer from "../Polaroid/PolaroidContainer";
 
-const ProjectPage = props => {
+const ProjectPage = () => {
   const poloroidImg1 = (
     <img
+      alt="HealthDetech"
       src={require("../../../assets/images/HealthDetech.png")}
       className="Polaroid-img"
     />
   );
   const poloroidImg2 = (
     <img
+      alt="RecoveryTrack"
       src={require("../../../assets/images/RecoveryT.jpg")}
       className="Polaroid-img"
     />
@@ -19,6 +21,7 @@ const ProjectPage = props => {
 
   const poloroidGif1 = (
     <img
+      alt="RideAid"
       src={require("../../../assets/gif/RideAid.gif")}
       className="Polaroid-img"
     />
@@ -38,6 +41,7 @@ const ProjectPage = props => {
               <a
                 href="https://github.com/xo28122000/RecoveryCoach"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 github.com/xo28122000/RecoveryCoach
               </a>
@@ -63,6 +67,7 @@ const ProjectPage = props => {
               <a
                 href="https://github.com/xo28122000/HealthDetect"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 github.com/xo28122000/HealthDetect
               </a>
@@ -101,6 +106,7 @@ const ProjectPage = props => {
               <a
                 href="https://github.com/helenamerk/hackmobility"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 github.com/helenamerk/hackmobility
               </a>

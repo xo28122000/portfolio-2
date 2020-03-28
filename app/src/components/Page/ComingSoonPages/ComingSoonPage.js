@@ -3,9 +3,10 @@ import "../Page.css";
 
 import PolaroidContainer from "../Polaroid/PolaroidContainer";
 
-const AboutPage = props => {
+const AboutPage = () => {
   const poloroidGif1 = (
     <img
+      alt="Coming soon"
       src={require("../../../assets/gif/UnderConstruction.gif")}
       className="Polaroid-img"
     />

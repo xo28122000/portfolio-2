@@ -3,27 +3,31 @@ import "../Page.css";
 
 import PolaroidContainer from "../Polaroid/PolaroidContainer";
 
-const ExperiencePage = props => {
+const ExperiencePage = () => {
   const poloroidImg1 = (
     <img
+      alt="SFHacksTeam"
       src={require("../../../assets/images/SFHacksTeam.png")}
       className="Polaroid-img"
     />
   );
   const poloroidImg2 = (
     <img
+      alt="TASC"
       src={require("../../../assets/images/TASC.jpg")}
       className="Polaroid-img"
     />
   );
   const poloroidImg3 = (
     <img
+      alt="SI"
       src={require("../../../assets/images/SI.jpg")}
       className="Polaroid-img"
     />
   );
   const poloroidImg4 = (
     <img
+      alt="SpeedLegal"
       src={require("../../../assets/images/SpeedLegal.png")}
       className="Polaroid-img"
     />
@@ -76,7 +80,10 @@ const ExperiencePage = props => {
             Book an appointment today
             <br />
             <span style={{ textDecoration: "underline" }}>
-              <a href="https://ueap.sfsu.edu/tutoring" target="_blank">
+              <a
+                href="https://ueap.sfsu.edu/tutoring"
+                rel="noopener noreferrer"
+              >
                 ueap.sfsu.edu/ tutoring
               </a>
             </span>

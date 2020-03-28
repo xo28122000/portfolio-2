@@ -23,3 +23,8 @@
     cursor: url("./assets/images/pointergif/2.png"), auto;
   }
 }
+
+a,
+a:hover {
+  cursor: url("./assets/images/pointergif/1.png"), auto;
+}

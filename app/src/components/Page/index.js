@@ -1,18 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Page.css";
 
 import Polaroid from "./Polaroid";
 import StickyNote from "./StickyNote";
 
-const Page = props => {
+const Page = () => {
   const poloroidImg1 = (
     <img
+      alt="bike"
       src={require("../../assets/images/bike.jpg")}
       className="Polaroid-img"
     />
   );
   const poloroidImg2 = (
     <img
+      alt="window"
       src={require("../../assets/images/window.jpg")}
       className="Polaroid-img"
     />

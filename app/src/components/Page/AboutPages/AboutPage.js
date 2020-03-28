@@ -3,15 +3,17 @@ import "../Page.css";
 
 import PolaroidContainer from "../Polaroid/PolaroidContainer";
 
-const AboutPage = props => {
+const AboutPage = () => {
   const poloroidImg1 = (
     <img
+      alt="me"
       src={require("../../../assets/images/me1.jpg")}
       className="Polaroid-img"
     />
   );
   const poloroidImg2 = (
     <img
+      alt="SFSU"
       src={require("../../../assets/images/SFSU.png")}
       className="Polaroid-img"
     />
@@ -19,17 +21,20 @@ const AboutPage = props => {
   const poloroidImg3 = (
     <img
       src={require("../../../assets/images/Linkedin.png")}
+      alt="linkedin"
       className="Polaroid-img"
     />
   );
   const poloroidImg4 = (
     <img
       src={require("../../../assets/images/Github.png")}
+      alt="Github"
       className="Polaroid-img"
     />
   );
   const poloroidImg5 = (
     <img
+      alt="instagram"
       src={require("../../../assets/images/Instagram.png")}
       className="Polaroid-img"
     />
@@ -88,7 +93,11 @@ const AboutPage = props => {
             details={
               <div>
                 <span style={{ textDecoration: "underline" }}>
-                  <a href="https://linkedin.com/in/jainam-s" target="_blank">
+                  <a
+                    href="https://linkedin.com/in/jainam-s"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     jainam-s
                   </a>
                 </span>
@@ -106,7 +115,13 @@ const AboutPage = props => {
             details={
               <div>
                 <span style={{ textDecoration: "underline" }}>
-                  <a href="https://github.com/xo28122000" target="_blank">xo28122000</a>
+                  <a
+                    href="https://github.com/xo28122000"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    xo28122000
+                  </a>
                 </span>
               </div>
             }
@@ -122,7 +137,13 @@ const AboutPage = props => {
             details={
               <div>
                 <span style={{ textDecoration: "underline" }}>
-                  <a href="https://instagram.com/jxxshah" target="_blank">jxxshah</a>
+                  <a
+                    href="https://instagram.com/jxxshah"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    jxxshah
+                  </a>
                 </span>
               </div>
             }

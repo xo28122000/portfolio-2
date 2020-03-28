@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import PageContainer from "../PageContainer";
 import AboutPage from "../Page/AboutPages/AboutPage";
 import ExperiencePage from "../Page/ExperiencePages/ExperiencePage";
