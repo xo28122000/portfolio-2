@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "./static/css/main.85329d38.chunk.css",
+    "main.js": "./static/js/main.652cd689.chunk.js",
+    "main.js.map": "./static/js/main.652cd689.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.a708e874.js",
+    "runtime-main.js.map": "./static/js/runtime-main.a708e874.js.map",
+    "static/js/2.ae31c825.chunk.js": "./static/js/2.ae31c825.chunk.js",
+    "static/js/2.ae31c825.chunk.js.map": "./static/js/2.ae31c825.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.540976cdb9a274044274b545d67ff48a.js": "./precache-manifest.540976cdb9a274044274b545d67ff48a.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.85329d38.chunk.css.map": "./static/css/main.85329d38.chunk.css.map",
+    "static/js/2.ae31c825.chunk.js.LICENSE.txt": "./static/js/2.ae31c825.chunk.js.LICENSE.txt",
+    "static/media/HealthDetech.png": "./static/media/HealthDetech.61769b5b.png",
+    "static/media/Instagram.png": "./static/media/Instagram.dd22b5bd.png",
+    "static/media/RecoveryT.jpg": "./static/media/RecoveryT.f4d00c98.jpg",
+    "static/media/RideAid.gif": "./static/media/RideAid.d6f3b933.gif",
+    "static/media/SFHacksTeam.png": "./static/media/SFHacksTeam.548dc3b7.png",
+    "static/media/SFSU.png": "./static/media/SFSU.f8e051b0.png",
+    "static/media/SI.jpg": "./static/media/SI.775541ad.jpg",
+    "static/media/TASC.jpg": "./static/media/TASC.1e957672.jpg",
+    "static/media/UnderConstruction.gif": "./static/media/UnderConstruction.af878a79.gif",
+    "static/media/me1.jpg": "./static/media/me1.990b05a4.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a708e874.js",
+    "static/js/2.ae31c825.chunk.js",
+    "static/css/main.85329d38.chunk.css",
+    "static/js/main.652cd689.chunk.js"
+  ]
+}
